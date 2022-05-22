@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>611983257420-ht1hvocii447tr6e3j6df05b0j4lahp5.apps.googleusercontent.com</string>
+	<string>1016902490919-b9156le6oje6v90cj3snqt1qr52hkdhr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.611983257420-ht1hvocii447tr6e3j6df05b0j4lahp5</string>
+	<string>com.googleusercontent.apps.1016902490919-b9156le6oje6v90cj3snqt1qr52hkdhr</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>611983257420-9h2ep5didaqkaqmes237l8kg9552utro.apps.googleusercontent.com</string>
+	<string>1016902490919-jk20uhp9ai2a9vkg56fip700d9k0c3u7.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCxOwCJXf823knZMNV2AaSVQ3lxKh9KFfc</string>
+	<string>AIzaSyASuVL2SekHLRWZbMMpQIY1RiwhojedJKM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>611983257420</string>
+	<string>1016902490919</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.flutterflow.apptest</string>
 	<key>PROJECT_ID</key>
-	<string>apptest1-29fd1</string>
+	<string>wizitonapp1</string>
 	<key>STORAGE_BUCKET</key>
-	<string>apptest1-29fd1.appspot.com</string>
+	<string>wizitonapp1.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:611983257420:ios:d18de87123ad39f4c2a9e9</string>
+	<string>1:1016902490919:ios:2dcecf2bbfe055c4e22702</string>
 </dict>
 </plist>
