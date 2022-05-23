@@ -195,8 +195,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             FFButtonWidget(
-                              onPressed: () {
-                                print('Button-ForgotPassword pressed ...');
+                              onPressed: () async {
+                                await sendEmailVerification();
                               },
                               text: 'Forgot Password?',
                               options: FFButtonOptions(
@@ -218,8 +218,23 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                               ),
                             ),
                             FFButtonWidget(
-                              onPressed: () {
-                                print('Button-Login pressed ...');
+                              onPressed: () async {
+                                final user = await signInWithEmail(
+                                  context,
+                                  emailAddressController.text,
+                                  passwordController.text,
+                                );
+                                if (user == null) {
+                                  return;
+                                }
+
+                                await Navigator.pushAndRemoveUntil(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HomeWidget(),
+                                  ),
+                                  (r) => false,
+                                );
                               },
                               text: 'Login',
                               options: FFButtonOptions(
@@ -442,8 +457,18 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                             ),
                             FFButtonWidget(
-                              onPressed: () {
-                                print('Button pressed ...');
+                              onPressed: () async {
+                                final user = await signInWithGoogle(context);
+                                if (user == null) {
+                                  return;
+                                }
+                                await Navigator.pushAndRemoveUntil(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HomeWidget(),
+                                  ),
+                                  (r) => false,
+                                );
                               },
                               text: 'Register',
                               options: FFButtonOptions(
